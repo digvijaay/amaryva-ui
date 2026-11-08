@@ -1,0 +1,30 @@
+/**
+ * Standard elevation shadow tuple (levels 0 through 24)
+ */
+export type Shadows = [
+  "none",
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string,
+];

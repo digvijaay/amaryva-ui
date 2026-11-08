@@ -10,9 +10,23 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@base-ui/react": "^1.9.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@iconify/react": "^6.0.4",
+    "@mui/system": "^9.5.0",
+    "axios": "^1.21.0",
+    "dayjs": "^1.11.23",
+    "lucide": "^1.70.0",
+    "motion": "^14.10.1",
     "next": "16.4.5",
+    "next-themes": "^0.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-apexcharts": "^2.2.0",
+    "react-dom": "19.3.0",
+    "simplebar-react": "^3.3.2",
+    "swiper": "^14.4.0",
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.2",

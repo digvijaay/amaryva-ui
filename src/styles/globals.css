@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------- */
+/* Tailwind CSS v4 Theme Bridge                                           */
+/* Maps our custom theme tokens to Tailwind utility classes               */
+/* ---------------------------------------------------------------------- */
+
+@theme inline {
+  --font-sans: var(--font-primary);
+  --font-mono: var(--font-secondary);
+
+  /* Backgrounds */
+  --color-background: var(--theme-color-background-default);
+  --color-paper: var(--theme-color-background-paper);
+  --color-neutral: var(--theme-color-background-neutral);
+
+  /* Brand Palette */
+  --color-primary: var(--theme-color-primary-main);
+  --color-primary-light: var(--theme-color-primary-light);
+  --color-primary-dark: var(--theme-color-primary-dark);
+
+  --color-secondary: var(--theme-color-secondary-main);
+  --color-secondary-light: var(--theme-color-secondary-light);
+  --color-secondary-dark: var(--theme-color-secondary-dark);
+
+  --color-info: var(--theme-color-info-main);
+  --color-success: var(--theme-color-success-main);
+  --color-warning: var(--theme-color-warning-main);
+  --color-error: var(--theme-color-error-main);
+
+  /* Text */
+  --color-text-primary: var(--theme-color-text-primary);
+  --color-text-secondary: var(--theme-color-text-secondary);
+  --color-text-disabled: var(--theme-color-text-disabled);
+
+  /* Borders & Dividers */
+  --color-divider: var(--theme-color-divider);
+
+  /* Custom Elevation Shadows */
+  --shadow-z1: var(--theme-shadow-z1);
+  --shadow-z4: var(--theme-shadow-z4);
+  --shadow-z8: var(--theme-shadow-z8);
+  --shadow-z12: var(--theme-shadow-z12);
+  --shadow-z16: var(--theme-shadow-z16);
+  --shadow-z20: var(--theme-shadow-z20);
+  --shadow-z24: var(--theme-shadow-z24);
+  --shadow-card: var(--theme-shadow-card);
+  --shadow-dialog: var(--theme-shadow-dialog);
+  --shadow-dropdown: var(--theme-shadow-dropdown);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Root & Color Scheme Defaults                                           */
+/* ---------------------------------------------------------------------- */
+
+:root,
+[data-color-scheme="light"] {
+  color-scheme: light;
+}
+
+.dark,
+[data-color-scheme="dark"] {
+  color-scheme: dark;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Base Resets                                                            */
+/* ---------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--theme-color-background-default, #ffffff);
+  color: var(--theme-color-text-primary, #1c252e);
+  font-family:
+    var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
